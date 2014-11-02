@@ -2,5 +2,7 @@ class VisitorsController < ApplicationController #inherits behavior from the App
 
 	def new
 		@owner = Owner.new #instance variables available in the corresponding view file
+		flash.now[:notice] = 'Welcome!'
+		flash.now[:alert] = 'My birthday is soon.'
 	end
 end
