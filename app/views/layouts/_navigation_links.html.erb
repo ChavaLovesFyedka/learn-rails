@@ -1,3 +1,5 @@
 <%# add navigation links to this file %>
 <%# We'll add links to About and Contact pages.  Doesn't require additional CSS styling. %>
 <%# following separation of concerns principle here.  separate links from styling that creates the navigation bar.  We can make changes without touching the navigation links.  We can replace the navigation parial and substitute one that uses Bootstrap styles instead of Foundation, leaving the navigation links intact. %>
+<li><%= link_to 'About', page_path('about') %></li>
+<li><%= link_to 'Contact', page_path('contact') %></li>
